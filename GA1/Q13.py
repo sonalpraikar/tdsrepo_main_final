@@ -10,10 +10,10 @@ def execute(question: str, parameter):
 def run_git_workflow(email):
 
     # GitHub repository details
-    GITHUB_OWNER = "23f2004837"  # Replace with your GitHub username/org
-    GITHUB_REPO = "daily-commit"   # Replace with your repo name
-    WORKFLOW_FILE = "email.yml"  # Name of your workflow file
-    BRANCH = "main"  # Branch to run the workflow on
+    GITHUB_OWNER = "abhisheks407"  # Replace with your GitHub username/org
+    GITHUB_REPO = "TDS"   # Replace with your repo name
+    WORKFLOW_FILE = "main.yml"  # Name of your workflow file
+    BRANCH = ".github/workflows"  # Branch to run the workflow on
 
     # Personal Access Token (PAT) with `repo` scope
     GITHUB_TOKEN = "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"  # Replace with your actual token
@@ -45,4 +45,4 @@ def run_git_workflow(email):
         print(f"❌ Failed to trigger workflow: {response.status_code}")
         print(response.text)
     
-    return f"https://raw.githubusercontent.com/23f2004837/daily-commit/refs/heads/main/{urllib.parse.quote(email)}.json"
+    return f"https://raw.githubusercontent.com/abhisheks407/daily-commit/refs/heads/main/{urllib.parse.quote(email)}.json"
