@@ -16,7 +16,7 @@ def run_git_workflow(email):
     BRANCH = ".github/workflows"  # Branch to run the workflow on
 
     # Personal Access Token (PAT) with `repo` scope
-    GITHUB_TOKEN = "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"  # Replace with your actual token
+    GITHUB_TOKEN = "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"  # Replace with your actual token
 
     # GitHub API endpoint
     url = f"https://api.github.com/repos/{GITHUB_OWNER}/{GITHUB_REPO}/actions/workflows/{WORKFLOW_FILE}/dispatches"
